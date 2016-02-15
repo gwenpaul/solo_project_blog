@@ -1,0 +1,46 @@
+{
+  "name": "technology_blog_solo_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwenpaul/technology_blog_solo_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwenpaul/technology_blog_solo_project/issues"
+  },
+  "homepage": "https://github.com/gwenpaul/technology_blog_solo_project#readme",
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-route": "^1.5.0",
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.14.2",
+    "bootstrap": "^3.3.6",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jquery": "^2.2.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^4.4.1",
+    "morgan": "^1.6.1",
+    "nodemailer": "^2.1.0",
+    "nodemon": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

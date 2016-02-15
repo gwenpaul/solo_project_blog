@@ -1,0 +1,137 @@
+
+    font: 16px Helvetica, Sans-Serif;
+}
+
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+
+#photo {
+    float: right;
+    margin-top: 0px;
+    border: solid 5px #ffffff;
+    margin-right: 100px;
+}
+#container {
+
+    margin-to: 0px;
+}
+
+#name {
+    width: 600px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-align: left;
+    border-bottom: 1px solid #999;
+}
+
+#contact {
+    width: 760px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 0 0 0px 0;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: left;
+}
+#summary {
+    width: 760px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    margin-right: 400px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #999;
+    text-align: left;
+}
+.main {
+    width: 760px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+    margin-right: 300px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: none;
+    letter-spacing: 2px;
+    border-bottom: none;
+    text-align: left;
+}
+li{
+    margin-left: 50px;
+}
+.date {
+    float: right;
+}
+.title {
+    font-style: italic;
+}
+h2 {
+    border-bottom: 1px solid #999;
+    margin-bottom: 20px;
+}
+h4 {
+    margin-bottom: 5px;
+}
+
+    .background-color {
+        color: #5c0808;
+    }
+
+    .navbar-inverse {
+        background-color:teal;
+        background-image: none;
+        background-repeat: no-repeat;
+        font-weight: bold;
+    }
+
+
+    .navbar-inverse .navbar-header .navbar-brand {
+        color: #ffffff;
+    }
+
+    .navbar-inverse {
+        background-color:#5c0808;
+        background-image: none;
+        background-repeat: no-repeat;
+        color: #fff;
+    }
+
+    .nav.navbar-nav li a {
+        color: #ffffff;
+    }
+
+    body {
+        font-family: Georgia;
+        margin: auto;
+    }
+
+    h2 {
+        color: #5c0808;
+    }
+
+    h4 {
+        color: #5c0808;
+    }
+
+    h1 {
+        color: #5c0808;
+    }
+
+

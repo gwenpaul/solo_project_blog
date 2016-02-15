@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="blogApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrator Login</title>
+
+
+    <script src="vendors/angular/angular.min.js" type="text/javascript"></script>
+    <script src="vendors/angular/angular-route.min.js" type="text/javascript"></script>
+    <script src="assets/scripts/client.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="vendors/angular/angular-route.min.js.map" type="text/javascript"></script>
+    <base href="/">
+
+    <!--<link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="assets/styles/styles.css" rel="stylesheet">-->
+    <!--<script src="vendors/angular/angular.min.js"></script>-->
+    <!--<script src="vendors/angular-route/angular-route.min.js"></script>-->
+    <!--<script src="assets/scripts/client.min.js"></script>-->
+    <!--<base href="/">-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/loginstyle.css"/>
+
+</head>
+<body ng-controller="LoginController">
+<!--initial class tells what were dealing w, second class gives more styling specificity-->
+<div id="menu" class="navbar navbar-inverse">
+    <div class="row">
+        <div class="col-md-12"><p></p></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12"><p></p></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12"><p></p></div>
+    </div>
+    <!--fixed width, if container left at default-->
+    <div class="container">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">G/P</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/blog">BLOG</a></li>
+                <li><a href="/resume">RESUME</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12"><p></p></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><p></p></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><p></p></div>
+        </div>
+        </nav>
+    </div>
+</div>
+</div>
+<div class="Main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><h1></h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="login">
+    <div class="row">
+        <div class="col-md-12 box">
+    <h1>Administrator Login</h1>
+    <form>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" ng-model="data.username"/>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" name="password" ng-model="data.password"/>
+        </div>
+    <button ng-click="SubmitData()">Log In</button>
+    </form>
+        </div>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
+
