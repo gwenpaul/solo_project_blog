@@ -5,7 +5,7 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 var Post = require('../../models/post');
-//var blogs = require('../../models/post');
+var blogs = require('../../models/post');
 
 router.post('/add', function(request, response){
     console.log(request.body);
@@ -21,6 +21,23 @@ router.post('/add', function(request, response){
 
 router.post('/add', function(request, response){
     console.log(request.body);
+
+    Post.create(request.body, function(error, post){
+        if(error){
+            console.log("there was an error saving post", error)
+        } else {
+            console.log('sucess');
+            response.send(200);
+
+        }
+    }); //2nd argument is result of post.create(request.body...
+
+    //var author = req.body.author;
+    //var date = req.body.date;
+    //var title = req.body.title;
+    //var post = req.body.post;
+});
+
 
     //Post.create(request.body, function(error, post){
     //    if(error){

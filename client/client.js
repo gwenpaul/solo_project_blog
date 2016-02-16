@@ -35,44 +35,44 @@ app.controller('MainController', ['$scope', '$http', function($scope, $http){
 
 }]);
 
-app.controller('DeleteController', ['$scope', '$http', function($scope, $http){
-    console.log("in delete router", request);
-    }]);
+//app.controller('DeleteController', ['$scope', '$http', function($scope, $http){
+//    console.log("in delete router", request);
+//    }]);
 
-app.controller('LoginController', ['$scope', '$http', '$location', function($scope, $http, $location){
+//app.controller('LoginController', ['$scope', '$http', '$location', function($scope, $http, $location){
+//
+//    $scope.data = {};
 
-    $scope.data = {};
 
-
-    var app = angular.module('blogApp', ['ngRoute']);
-
-    app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-        $routeProvider
-            .when('/', {
-                templateUrl: 'views/login.html',
-                controller: 'LoginController'
-            })
-            .when('/register', {
-                templateUrl: 'views/register.html',
-                controller: 'RegisterController'
-            })
-            .when('/registerConfirm', {
-                templateUrl: 'views/registerConfirm.html',
-                controller: 'LoginController'
-            })
-            .when('/choose', {
-                templateUrl: 'views/choose.html',
-                controller: 'ChooseController'
-            })
-            .when('/save', {
-                templateUrl: 'views/save.html',
-                controller: 'SaveController'
-            })
-            .when('/show', {
-                templateUrl: 'views/show.html',
-                controller: 'ShowController'
-            })
-    }]);
+    //var app = angular.module('blogApp', ['ngRoute']);
+    //
+    //app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+    //    $routeProvider
+    //        .when('/', {
+    //            templateUrl: 'views/login.html',
+    //            controller: 'LoginController'
+    //        })
+    //        .when('/register', {
+    //            templateUrl: 'views/register.html',
+    //            controller: 'RegisterController'
+    //        })
+    //        .when('/registerConfirm', {
+    //            templateUrl: 'views/registerConfirm.html',
+    //            controller: 'LoginController'
+    //        })
+    //        .when('/choose', {
+    //            templateUrl: 'views/choose.html',
+    //            controller: 'ChooseController'
+    //        })
+    //        .when('/save', {
+    //            templateUrl: 'views/save.html',
+    //            controller: 'SaveController'
+    //        })
+    //        .when('/show', {
+    //            templateUrl: 'views/show.html',
+    //            controller: 'ShowController'
+    //        })
+    //}]);
 
     app.controller('LoginController', ['$scope', '$http', '$location', function($scope, $http, $location) {
 
@@ -122,12 +122,12 @@ $scope.successPost = false;
     }
 }]);
 //then gives response
-app.controller('PostController', ['$scope', '$http', function($scope, $http) {
-    $http.get('/blog/see').then(function (response) {
-        console.log(response);
-        $scope.blogs = response.data;
-    });
-}]);
+    app.controller('PostController', ['$scope', '$http', function($scope, $http){
+        $http.get('/blog/see').then(function(response){
+            console.log(response);
+                $scope.blogs = response.data;
+        });
+    }]);
 
 
 
